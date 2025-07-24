@@ -31,6 +31,28 @@ body{
 html{
     font-size: 16px;
 }
+.section-heading{
+    font-size: 3.125rem;
+    font-weight: bold;
+    color:black;
+    margin-bottom: 0px;
+}
+.description{
+    font-size: 1.375rem;
+    color:rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+    padding: 0px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+.btn-primary{
+    background-color: #E95A08;
+    font-size: 1rem;
+    font-weight:400;
+    color:white;
+    border:none;
+    padding:19px 80px;
+}
 /* navbar styles start */
 .navbar{
     justify-content: space-between;
@@ -56,13 +78,14 @@ margin-left: 48px;
     text-decoration: none;
 }
 header{
-    margin-bottom: 109px;
+    
     margin-top: 30px;
 }
 /* banner styles */
 .banner{
     display: flex;
     align-items: last baseline;
+    margin-top: 109px;
 }
 .banner-content h1{
     font-weight: bold;
@@ -70,11 +93,141 @@ header{
     margin-bottom: 0px;
     margin-top: 0px;
 }
-.banner-content p{
+ .banner-content p{
     margin-top: 13px;
     padding: 0;
     margin-bottom: 0px;
-    font-size: 1.37rem;
+    font-size: 1.5rem;
+    text-align: start;
+} 
+
+/* our plants section styles */
+.our-plants{
+    margin-top: 120px;
+    margin-bottom: 210px;
+}
+.plants-content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.our-plant-items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 49px;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.plant-item button{
+    width: 100%;
+    margin: 0px;  
+}
+.plant-item h6{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.plant-item h5{
+    font-size: 1rem;
+    font-weight:700;
+    margin-top: 1rem;
+    margin-bottom:1rem ;
+    text-align: center;
+}
+/* seller section syles */
+.seller-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5rem;
+    margin-bottom: 8.375rem;
+  
+
+}
+.seller-details h3{
+    margin-top: 0;
+    margin-bottom: 2rem;
+    
+}
+
+.seller-details ul li{
+    margin-top:1.5rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    
+}
+/* latest deals section styles */
+.deals-content h2,p{
+    text-align: center;
+}
+.deals-content h2{
+    margin-bottom: 1rem;
+}
+.deals-content p{
+    margin-top: 0px;
+    padding: 0px 10rem 7rem 10rem;
+}
+.img-container{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    
+}
+.deals-image img{
+    border: none;
+    border-radius: 14px;
+}
+.deals-images img{
+    border: none;
+border-radius: 22px;
+}
+.deals-images{
+    display: flex;
+    gap: 28px;
+}
+.deals-image{
+    position: relative;
+}
+.latest-deals{
+    margin-bottom: 7rem;
+}
+.img-container button{
+   all:unset;
+   border-bottom: 2px solid white;
+   font-size: 1rem;
+   font-weight: 500;
+   position: absolute;
+    
+}
+.price-tag-ana,.price-tag-bloom{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    color:white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.image-zabo{
+    position: relative;
+}
+.image-zabo button{
+    all:unset;
+   border-bottom: 2px solid white;
+   font-size: 2rem;
+   font-weight: 500;
+   position: absolute;
+}
+.price-tag-zabo{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    color:white;
+    font-size: 2rem;
+    font-weight: bold;
 }
 /* Responsive media query */
 @media screen and (max-width:576px){
@@ -99,4 +252,5 @@ header{
     .hidden{
         display: none;
     }
+
 }
