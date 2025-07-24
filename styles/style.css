@@ -228,7 +228,42 @@ border-radius: 22px;
     color:white;
     font-size: 2rem;
     font-weight: bold;
+    
 }
+/* subscribe section styles */
+.subscribe-img{
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+}
+.subscribe-img img{
+    width: 100%;
+    height: auto;
+    display: relative;
+}
+.form-items{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    color:white;
+    text-align: center;
+}
+.form-items h3{
+    color: white;
+}
+#email-address{
+    height: 3.1875rem;
+    width: 32rem;
+    padding-left:1rem ;
+    margin-right: 0px;
+    font-size: 1rem;
+}
+
 /* Responsive media query */
 @media screen and (max-width:576px){
   .navbar{
