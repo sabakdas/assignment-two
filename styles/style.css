@@ -255,6 +255,7 @@ border-radius: 22px;
 }
 .form-items h3{
     color: white;
+    margin-bottom: 1.5rem;
 }
 #email-address{
     height: 3.1875rem;
@@ -262,6 +263,30 @@ border-radius: 22px;
     padding-left:1rem ;
     margin-right: 0px;
     font-size: 1rem;
+}
+/* footer section styles */
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin:50px auto;
+}
+.footer-icon p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    text-align: start;
+}
+.footer-list-items ul{
+    list-style: none;
+}
+.footer-list-items ul li{
+    margin-bottom: 1rem;
+}
+.footer-list-items a{
+    text-decoration: none;
+    color:rgba(107, 114, 128, 1);
+}
+.icon-container img{
+    margin-left: 1rem;
 }
 
 /* Responsive media query */
