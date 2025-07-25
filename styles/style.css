@@ -150,13 +150,45 @@ header{
     text-align: center;
 }
 /* seller section syles */
+.image-container{
+    position: relative;
+}
+#main-image{
+    width: 540px;
+    height:auto;
+}
+#main-image img{
+    width: 100%;
+    height: auto;
+}
+#badge-image{
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    top:-126px;
+    right: -93px;  
+}
+@keyframes ding-dong {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#badge-image img{
+width: 100%;
+height: 100%;
+animation: ding-dong 2s ease-in-out 0s infinite alternate;
+}
+/* #badge-image img:hover{
+    transform: rotate(360deg);
+} */
 .seller-container{
     display: flex;
     justify-content: space-between;
     gap: 3.5rem;
-    margin-bottom: 8.375rem;
-  
-
+    margin-bottom:7rem;
 }
 .seller-details h3{
     margin-top: 0;
@@ -371,5 +403,12 @@ footer{
 }
 .btn-primary{
     padding: 1rem 2rem;
+}
+#badge-image img{
+    display: none;
+}
+#main-image img{
+    width: 398.4px;
+    height: auto;
 }
 }
